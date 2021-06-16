@@ -1,0 +1,9 @@
+{
+  "name": "egg-notFound",
+  "version": "1.0.0",
+  "eggPlugin": {
+    "name": "notFound"
+  },
+  "dependencies": {
+  }
+}

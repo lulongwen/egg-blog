@@ -1,0 +1,9 @@
+{
+  "name": "egg-auth",
+  "version": "1.0.0",
+  "eggPlugin": {
+    "name": "auth"
+  },
+  "dependencies": {
+  }
+}

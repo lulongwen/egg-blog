@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Antd</title>
+  <link href="https://cdn.bootcdn.net/ajax/libs/antd/4.15.1/antd.min.css" rel="stylesheet">
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/babel-standalone/7.0.0-beta.3/babel.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/antd/4.15.1/antd-with-locales.js"></script>
+<script type="text/babel">
+  const { ConfigProvider, DatePicker, Button, message } = antd;
+  
+  function App() {
+    const [ date, setDate ] = React.useState(moment);
+    const handleChange = value => {
+      message.info(`您选择的日期是: ${value ? value.format('YYYY-MM-DD') : '未选择'}`);
+      setDate(value);
+    };
+    
+    return (
+      <ConfigProvider>
+        <DatePicker onChange={handleChange} value={date}/>
+        <div>
+          当前日期：{date.format('YYYY-MM-DD')}
+        </div>
+        <Button type="primary">提交</Button>
+      </ConfigProvider>
+    );
+  }
+  
+  ReactDOM.render(<App/>, document.getElementById('root'));
+</script>
+</body>
+</html>
