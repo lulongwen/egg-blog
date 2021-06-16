@@ -1,14 +1,16 @@
-# egg-server
+# egg-blog-cms
 
 EGG-BFF架构图
 
-<img src="./database/egg-bff架构图.svg" alt="egg-bff架构图" align="left"/>
+<img src="./ui/egg-bff架构图.svg" alt="egg-bff架构图" align="left"/>
 
 
 
 首页效果图
 
-<img src="./database/egg-server.jpg" alt="egg-server" style="zoom:50%;" align="left"/>
+<img src="./ui/珑文的博客.png" alt="珑文的博客" style="zoom:50%;" align="left"/>
+
+
 
 
 
@@ -17,7 +19,7 @@ EGG-BFF架构图
 
 
 ```bash
-git clone https://github.com/lulongwen/egg-server.git
+git clone https://github.com/lulongwen/egg-blog.git
 ```
 
 
@@ -27,8 +29,10 @@ git clone https://github.com/lulongwen/egg-server.git
 ```bash
 npm i
 npm run dev
-open http://localhost:7001/
+open http://localhost:8081/
 ```
+
+
 
 
 
